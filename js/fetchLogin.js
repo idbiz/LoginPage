@@ -1,7 +1,7 @@
   const getEmail = document.getElementById("email");
   const getPassword = document.getElementById("password");
 
-  document.querySelector("#login-form").addEventListener("login-button", (e) => {
+  document.querySelector("#login-form").addEventListener("submit", (e) => {
     e.preventDefault();
 
     const datajson = {
