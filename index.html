@@ -37,10 +37,10 @@
 
     <div class="form-container login-container">
       <i class="ph ph-arrow-circle-left back" id="back-btn"></i>
-      <form action="#">
+      <form id="login-form" action="">
         <h1>Login here.</h1>
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
+        <input id="email" type="email" placeholder="Email">
+        <input id="password" type="password" placeholder="Password">
         <div class="content">
           <div class="checkbox">
             <input type="checkbox" name="checkbox" id="checkbox">
@@ -50,7 +50,7 @@
             <a href="#">Forgot password?</a>
           </div>
         </div>
-        <button>Login</button>
+        <button id="login-button">Login</button>
         <span>or use your account</span>
         <div class="social-container">
           <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
@@ -84,7 +84,14 @@
 
   </div>
 
-  <script src="/js/index.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script src="js/fetchLogin.js"></script>
+  <script src="js/fetchRegister.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
 </html>
