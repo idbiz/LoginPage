@@ -27,7 +27,7 @@ export async function fetchRegister() {
   
       console.log(raw);
   
-      fetch(backend.register, requestOptions)
+      fetch("https://asia-southeast2-awangga.cloudfunctions.net/idbiz/auth/register", requestOptions)
         .then(async (response) => {
           const status = response.status;
           const result = await response.json();
