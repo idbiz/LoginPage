@@ -8,10 +8,10 @@ export async function fetchRegister() {
       e.preventDefault();
   
       const datajson = {
-        Email: getEmail.value,
         Name: getName.value,
-        Password: getPassword.value,
+        Email: getEmail.value,
         PhoneNumber: getPhoneNumber.value,
+        Password: getPassword.value,
       };
   
       const myHeaders = new Headers();
