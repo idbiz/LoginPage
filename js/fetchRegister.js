@@ -1,7 +1,7 @@
 export async function fetchRegister() {
-    const getEmail = document.getElementById("email");
+    const getEmail = document.getElementById("email-regis");
     const getName = document.getElementById("name");
-    const getPassword = document.getElementById("password");
+    const getPassword = document.getElementById("password-regis");
     const getPhoneNumber = document.getElementById("phonenumber");
   
     document.querySelector("#register-form").addEventListener("submit", (e) => {
