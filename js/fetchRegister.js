@@ -1,8 +1,8 @@
 export async function fetchRegister() {
+    const getName = document.getElementById("username");
     const getEmail = document.getElementById("email-regis");
-    const getName = document.getElementById("name");
-    const getPassword = document.getElementById("password-regis");
     const getPhoneNumber = document.getElementById("phonenumber");
+    const getPassword = document.getElementById("password-regis");
   
     document.querySelector("#register-form").addEventListener("submit", (e) => {
       e.preventDefault();
@@ -26,7 +26,7 @@ export async function fetchRegister() {
       };
   
       console.log(raw);
-  
+
       fetch("https://asia-southeast2-awangga.cloudfunctions.net/idbiz/auth/register", requestOptions)
         .then(async (response) => {
           const status = response.status;
