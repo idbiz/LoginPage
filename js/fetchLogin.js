@@ -28,6 +28,9 @@
         const result = await response.json();
 
         if (status === 200) {
+          const token = result.token;
+          document.cookie = `login=${token}; path=/; secure;`;
+          
           Swal.fire({
             title: "Login Berhasil",
             text: "Anda berhasil Login.",
